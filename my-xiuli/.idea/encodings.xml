@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-admin-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-admin-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-kefu-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-kefu-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-user-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-user-provider" charset="UTF-8" />
+  </component>
+</project>

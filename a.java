@@ -1,5 +1,5 @@
 public class a
 {
-	//main方法
+	//master的注释
 	public void main(){} 
 }

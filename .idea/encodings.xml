@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/my-xiuli" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-xiuli/my-admin-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-xiuli/my-admin-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-xiuli/my-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-xiuli/my-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-xiuli/my-kefu-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-xiuli/my-kefu-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-xiuli/my-user-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-xiuli/my-user-provider" charset="UTF-8" />
+  </component>
+</project>

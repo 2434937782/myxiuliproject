@@ -1,5 +1,5 @@
 public class a
 {
-	//main方法
+	//zs的注释
 	public void main(){} 
 }

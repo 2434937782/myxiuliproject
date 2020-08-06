@@ -61,7 +61,7 @@ public class RestGLYongHuServiceImpl {
 
     //删除用户
     @RequestMapping("/deleteUser/{id}")
-    public int deleteUser(Integer id) {
+    public int deleteUser(@PathVariable("id") Integer id) {
         return deleteUser(id);
     }
 

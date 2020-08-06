@@ -30,7 +30,7 @@
     <update id="update" parameterType="com.kgc.pojo.Gonggao">
 
         UPDATE gonggao
-        SET ggtitle=#{ggtitle},ggcontent=#{ggcontent},NOW(),glid=#{glid}
+        SET ggtitle=#{ggtitle},ggcontent=#{ggcontent},ggdate=NOW(),glid=#{glid}
         WHERE ggid=#{ggid}
     </update>
 

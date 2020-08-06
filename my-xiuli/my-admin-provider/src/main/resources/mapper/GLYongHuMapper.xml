@@ -8,7 +8,7 @@
         insert into jinggao values(null,#{jgyhid},#{jgyy} ,NOW(),#{glid})
     </insert>
     <insert id="addXinXi" parameterType="com.kgc.pojo.XinXi">
-        INSERT INTO(NULL,#{yhid},jgyy,NOW(),#{glid})
+        INSERT INTO xinxi values(NULL,#{yhid},#{xxnr},NOW(),#{glid})
     </insert>
 
     <select id="getUserById" resultType="com.kgc.pojo.Users">

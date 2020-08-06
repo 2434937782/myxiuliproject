@@ -28,6 +28,12 @@ public class RestGLYongHuServiceImpl {
     //警告表添加  被警告人
     @RequestMapping("/addJingGao")
     public int addJingGao(@RequestBody JingGao jingGao) {
+        XinXi xinXi =new XinXi();
+        if (glYongHuMapper.addXinXi(xinXi)>0){
+            System.out.println("1");
+        }else {
+            System.out.println("0");
+        }
         return glYongHuMapper.addJingGao(jingGao);
     }
 

@@ -39,8 +39,8 @@ public class RestGLYongHuServiceImpl {
 
     //信息表根据被警告人id发送信息
     @RequestMapping("/getJingGaoById/{id}")
-    public JingGao getJingGaoById(@PathVariable("id") JingGao jingGao) {
-        return glYongHuMapper.getJingGaoById(jingGao);
+    public JingGao getJingGaoById(@PathVariable("id") Integer id) {
+        return glYongHuMapper.getJingGaoById(id);
     }
 
     @RequestMapping("/addXinXi")

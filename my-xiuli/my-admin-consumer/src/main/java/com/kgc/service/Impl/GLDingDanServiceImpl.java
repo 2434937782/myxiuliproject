@@ -13,11 +13,11 @@ public class GLDingDanServiceImpl implements GLDingDanService {
 
     @Override
     public Dingdan getDingDanById(Integer id) {
-        return null;
+        return glDingDanFeignClient.getDingDanById(id);
     }
 
     @Override
     public int upadate(Dingdan dingdan) {
-        return 0;
+        return glDingDanFeignClient.upadate(dingdan);
     }
 }

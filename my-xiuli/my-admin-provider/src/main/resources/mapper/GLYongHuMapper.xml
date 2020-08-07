@@ -10,6 +10,10 @@
     <insert id="addXinXi" parameterType="com.kgc.pojo.XinXi">
         INSERT INTO xinxi values(NULL,#{yhid},#{xxnr},NOW(),#{glid})
     </insert>
+    <select id="getJingGaoById" resultType="com.kgc.pojo.JingGao">
+        select * from jinggao
+        where jgid=#{jgid}
+    </select>
 
     <select id="getUserById" resultType="com.kgc.pojo.Users">
         select * from users_message

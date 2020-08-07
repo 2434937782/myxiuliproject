@@ -15,14 +15,14 @@ public class RestGLDingDanServiceImpl {
     @Autowired
     private GLDingDanMapper glDingDanMapper;
 
-    @RequestMapping("/getid/{id}")
+    @RequestMapping("/getDingDanById/{id}")
     public Dingdan getDingDanById(@PathVariable("id") Integer id) {
         return glDingDanMapper.getDingDanById(id);
     }
 
     @RequestMapping("/update")
-    public int upadate(@RequestBody Dingdan dingdan) {
-        return glDingDanMapper.upadate(dingdan);
+    public int update(@RequestBody Dingdan dingdan) {
+        return glDingDanMapper.update(dingdan);
     }
 
 }

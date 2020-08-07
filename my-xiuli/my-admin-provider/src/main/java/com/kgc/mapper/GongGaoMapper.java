@@ -22,5 +22,5 @@ public interface GongGaoMapper {
     //修改
     public Gonggao getGonggaoById(Integer id);
 
-    public int update(Gonggao gonggao);
+    public int ggupdate(Gonggao gonggao);
 }

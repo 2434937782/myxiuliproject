@@ -14,6 +14,6 @@ public interface GLDingDanFeignClient {
     public Dingdan getDingDanById(@PathVariable("id") Integer id);
 
     @RequestMapping("/update")
-    public int upadate(@RequestBody Dingdan dingdan);
+    public int update(@RequestBody Dingdan dingdan);
 }
 

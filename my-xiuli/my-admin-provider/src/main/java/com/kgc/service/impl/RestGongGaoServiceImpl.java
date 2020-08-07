@@ -46,9 +46,9 @@ public class RestGongGaoServiceImpl {
         return gongGaoMapper.getGonggaoById(id);
     }
 
-    @RequestMapping("/update")
-    public int update(@RequestBody Gonggao gonggao) {
-        return gongGaoMapper.update(gonggao);
+    @RequestMapping("/ggupdate")
+    public int ggupdate(@RequestBody Gonggao gonggao) {
+        return gongGaoMapper.ggupdate(gonggao);
     }
 
 }

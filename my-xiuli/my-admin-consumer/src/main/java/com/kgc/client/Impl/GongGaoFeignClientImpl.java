@@ -34,7 +34,7 @@ public class GongGaoFeignClientImpl implements GongGaoFeignClient {
     }
 
     @Override
-    public int update(Gonggao gonggao) {
+    public int ggupdate(Gonggao gonggao) {
         return 0;
     }
 }

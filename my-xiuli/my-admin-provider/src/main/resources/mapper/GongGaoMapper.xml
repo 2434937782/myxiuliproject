@@ -27,7 +27,7 @@
         where ggid=#{ggid}
     </select>
 
-    <update id="update" parameterType="com.kgc.pojo.Gonggao">
+    <update id="ggupdate" parameterType="com.kgc.pojo.Gonggao">
 
         UPDATE gonggao
         SET ggtitle=#{ggtitle},ggcontent=#{ggcontent},ggdate=NOW(),glid=#{glid}

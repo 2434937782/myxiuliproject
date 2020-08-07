@@ -5,7 +5,7 @@
         select * from dingdan
         where id=#{id}
     </select>
-    <update id="upadate" parameterType="com.kgc.pojo.Dingdan">
+    <update id="update" parameterType="com.kgc.pojo.Dingdan">
         UPDATE dingdan
         SET ddjg=#{ddjg},dtype=#{dtype}
         WHERE id=#{id}

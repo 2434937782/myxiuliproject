@@ -17,7 +17,7 @@ public class GLDingDanServiceImpl implements GLDingDanService {
     }
 
     @Override
-    public int upadate(Dingdan dingdan) {
-        return glDingDanFeignClient.upadate(dingdan);
+    public int update(Dingdan dingdan) {
+        return glDingDanFeignClient.update(dingdan);
     }
 }

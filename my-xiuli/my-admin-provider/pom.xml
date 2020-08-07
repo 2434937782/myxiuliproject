@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>my-admin-provider</artifactId>
+    <artifactId>my-provider</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

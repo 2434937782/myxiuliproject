@@ -7,5 +7,5 @@ import org.apache.ibatis.annotations.Mapper;
 public interface GLDingDanMapper {
     //继续维修  修改  维修价格，状态
     public Dingdan getDingDanById(Integer id);
-    public int upadate(Dingdan dingdan);
+    public int update(Dingdan dingdan);
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.kgc.mapper.GLYongHuMapper">
     <select id="getUserAll" resultType="com.kgc.pojo.Users">
-        select * from 待定表
+        select * from 待定
     </select>
     <insert id="addJingGao" parameterType="com.kgc.pojo.JingGao">
         insert into jinggao values(null,#{jgyhid},#{jgyy} ,NOW(),#{glid})

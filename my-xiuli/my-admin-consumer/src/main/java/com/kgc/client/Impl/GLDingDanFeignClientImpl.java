@@ -12,7 +12,7 @@ public class GLDingDanFeignClientImpl implements GLDingDanFeignClient {
     }
 
     @Override
-    public int upadate(Dingdan dingdan) {
+    public int update(Dingdan dingdan) {
         return 0;
     }
 }

@@ -28,6 +28,6 @@ public interface GongGaoFeignClient {
     //修改
     @RequestMapping("/getGonggaoById/{id}")
     public Gonggao getGonggaoById(Integer id);
-    @RequestMapping("/update")
-    public int update(Gonggao gonggao);
+    @RequestMapping("/ggupdate")
+    public int ggupdate(Gonggao gonggao);
 }

@@ -37,7 +37,7 @@ public class GongGaoServiceImpl implements GongGaoService {
     }
 
     @Override
-    public int update(Gonggao gonggao) {
-        return gongGaoFeignClient.update(gonggao);
+    public int ggupdate(Gonggao gonggao) {
+        return gongGaoFeignClient.ggupdate(gonggao);
     }
 }

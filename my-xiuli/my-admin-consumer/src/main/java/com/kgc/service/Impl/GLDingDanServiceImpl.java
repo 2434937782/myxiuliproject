@@ -12,8 +12,8 @@ public class GLDingDanServiceImpl implements GLDingDanService {
     private GLDingDanFeignClient glDingDanFeignClient;
 
     @Override
-    public Dingdan getDingDanById(Integer id) {
-        return glDingDanFeignClient.getDingDanById(id);
+    public Dingdan getDingDanById(Integer ddid) {
+        return glDingDanFeignClient.getDingDanById(ddid);
     }
 
     @Override

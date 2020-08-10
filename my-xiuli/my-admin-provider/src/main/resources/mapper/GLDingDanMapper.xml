@@ -3,11 +3,11 @@
 <mapper namespace="com.kgc.mapper.GLDingDanMapper">
     <select id="getDingDanById" resultType="com.kgc.pojo.Dingdan">
         select * from dingdan
-        where id=#{id}
+        where ddid=#{ddid}
     </select>
     <update id="update" parameterType="com.kgc.pojo.Dingdan">
         UPDATE dingdan
         SET ddjg=#{ddjg},dtype=#{dtype}
-        WHERE id=#{id}
+        WHERE ddid=#{ddid}
     </update>
 </mapper>

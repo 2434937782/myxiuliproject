@@ -24,12 +24,12 @@ public class GongGaoFeignClientImpl implements GongGaoFeignClient {
     }
 
     @Override
-    public int delete(Integer id) {
+    public int delete(Integer ggid) {
         return 0;
     }
 
     @Override
-    public Gonggao getGonggaoById(Integer id) {
+    public Gonggao getGonggaoById(Integer ggid) {
         return null;
     }
 

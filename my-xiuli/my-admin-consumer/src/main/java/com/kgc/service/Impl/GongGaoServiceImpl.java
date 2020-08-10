@@ -27,13 +27,13 @@ public class GongGaoServiceImpl implements GongGaoService {
     }
 
     @Override
-    public int delete(Integer id) {
-        return gongGaoFeignClient.delete(id);
+    public int delete(Integer ggid) {
+        return gongGaoFeignClient.delete(ggid);
     }
 
     @Override
-    public Gonggao getGonggaoById(Integer id) {
-        return gongGaoFeignClient.getGonggaoById(id);
+    public Gonggao getGonggaoById(Integer ggid) {
+        return gongGaoFeignClient.getGonggaoById(ggid);
     }
 
     @Override

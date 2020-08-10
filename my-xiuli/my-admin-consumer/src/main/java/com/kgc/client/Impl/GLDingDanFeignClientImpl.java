@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class GLDingDanFeignClientImpl implements GLDingDanFeignClient {
     @Override
-    public Dingdan getDingDanById(Integer id) {
+    public Dingdan getDingDanById(Integer ddid) {
         return null;
     }
 

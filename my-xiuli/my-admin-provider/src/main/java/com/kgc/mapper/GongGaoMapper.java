@@ -17,10 +17,10 @@ public interface GongGaoMapper {
     public int add(Gonggao gonggao);
 
     //删除
-    public int delete(Integer id);
+    public int delete(Integer ggid);
 
     //修改
-    public Gonggao getGonggaoById(Integer id);
+    public Gonggao getGonggaoById(Integer ggid);
 
     public int ggupdate(Gonggao gonggao);
 }

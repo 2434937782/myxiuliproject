@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @FeignClient(name = "my-admin-provider", fallback = GLDingDanFeignClientImpl.class)
 public interface GLDingDanFeignClient {
     //继续维修  修改  维修价格，状态
-    @RequestMapping("/getid/{id}")
-    public Dingdan getDingDanById(@PathVariable("id") Integer id);
+    @RequestMapping("/getid/{ddid}")
+    public Dingdan getDingDanById(@PathVariable("ddid") Integer ddid);
 
     @RequestMapping("/update")
     public int update(@RequestBody Dingdan dingdan);

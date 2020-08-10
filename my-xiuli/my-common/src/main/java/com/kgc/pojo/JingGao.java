@@ -7,6 +7,7 @@ public class JingGao {
     private String jgyy;//警告原因
     private String jgdate;//警告日期
     private Integer glid;//发起警告的管理id
+    private XinXi xinXi;//信息
 
     public Integer getJgid() {
         return jgid;
@@ -46,5 +47,13 @@ public class JingGao {
 
     public void setGlid(Integer glid) {
         this.glid = glid;
+    }
+
+    public XinXi getXinXi() {
+        return xinXi;
+    }
+
+    public void setXinXi(XinXi xinXi) {
+        this.xinXi = xinXi;
     }
 }

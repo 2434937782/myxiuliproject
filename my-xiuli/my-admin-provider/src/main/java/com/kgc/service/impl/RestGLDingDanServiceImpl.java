@@ -15,9 +15,9 @@ public class RestGLDingDanServiceImpl {
     @Autowired
     private GLDingDanMapper glDingDanMapper;
 
-    @RequestMapping("/getDingDanById/{id}")
-    public Dingdan getDingDanById(@PathVariable("id") Integer id) {
-        return glDingDanMapper.getDingDanById(id);
+    @RequestMapping("/getDingDanById/{ddid}")
+    public Dingdan getDingDanById(@PathVariable("ddid") Integer ddid) {
+        return glDingDanMapper.getDingDanById(ddid);
     }
 
     @RequestMapping("/update")

@@ -22,12 +22,12 @@ public interface GongGaoFeignClient {
     public int add(Gonggao gonggao);
 
     //删除
-    @RequestMapping("/delete/{id}")
-    public int delete(Integer id);
+    @RequestMapping("/delete/{ggid}")
+    public int delete(Integer ggid);
 
     //修改
-    @RequestMapping("/getGonggaoById/{id}")
-    public Gonggao getGonggaoById(Integer id);
+    @RequestMapping("/getGonggaoById/{ggid}")
+    public Gonggao getGonggaoById(Integer ggid);
     @RequestMapping("/ggupdate")
     public int ggupdate(Gonggao gonggao);
 }

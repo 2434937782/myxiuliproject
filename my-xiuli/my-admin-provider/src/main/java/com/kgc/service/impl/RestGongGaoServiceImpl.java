@@ -35,15 +35,15 @@ public class RestGongGaoServiceImpl {
     }
 
     //删除
-    @RequestMapping("/delete/{id}")
-    public int delete(@PathVariable("id") Integer id) {
-        return gongGaoMapper.delete(id);
+    @RequestMapping("/delete/{ggid}")
+    public int delete(@PathVariable("ggid") Integer ggid) {
+        return gongGaoMapper.delete(ggid);
     }
 
     //修改
-    @RequestMapping("/getGonggaoById/{id}")
-    public Gonggao getGonggaoById(@PathVariable("id") Integer id) {
-        return gongGaoMapper.getGonggaoById(id);
+    @RequestMapping("/getGonggaoById/{ggid}")
+    public Gonggao getGonggaoById(@PathVariable("ggid") Integer ggid) {
+        return gongGaoMapper.getGonggaoById(ggid);
     }
 
     @RequestMapping("/ggupdate")

@@ -6,7 +6,7 @@
         <where>
             <if test="ggtitle!=null and ggtitle!=''">and ggtitle like concat('%',#{ggtitle},'%')</if>
         </where>
-        ORDER by id
+        ORDER by ggid
         LIMIT #{index},#{size}
     </select>
 

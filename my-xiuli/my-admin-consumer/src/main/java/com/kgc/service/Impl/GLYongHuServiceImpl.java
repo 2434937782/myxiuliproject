@@ -26,8 +26,8 @@ public class GLYongHuServiceImpl implements GLYongHuService {
     }
 
     @Override
-    public JingGao getJingGaoById(Integer id) {
-        return glYongHuFeignClient.getJingGaoById(id);
+    public JingGao getJingGaoById(Integer jgid) {
+        return glYongHuFeignClient.getJingGaoById(jgid);
     }
 
     @Override

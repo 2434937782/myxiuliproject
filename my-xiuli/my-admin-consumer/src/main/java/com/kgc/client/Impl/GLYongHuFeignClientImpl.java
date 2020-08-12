@@ -21,7 +21,7 @@ public class GLYongHuFeignClientImpl implements GLYongHuFeignClient {
     }
 
     @Override
-    public JingGao getJingGaoById(Integer id) {
+    public JingGao getJingGaoById(Integer jgid) {
         return null;
     }
 

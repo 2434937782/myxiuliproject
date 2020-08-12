@@ -12,7 +12,7 @@ public interface GLYongHuService {
     //警告表添加  被警告人
     public int addJingGao(JingGao jingGao);
     //信息表根据被警告人id发送信息
-    public JingGao getJingGaoById(Integer id);
+    public JingGao getJingGaoById(Integer jgid);
     public int addXinXi(XinXi xinxi);
     //修改用户信息
     public Users getUserById(Integer id);

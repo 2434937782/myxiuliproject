@@ -1,14 +1,12 @@
 package com.kgc.service;
 
 import com.kgc.pojo.Gonggao;
+import com.kgc.util.PageUtil;
 
 import java.util.List;
 
 public interface GongGaoService {
-    //分页
-    public int getConout(String ggtitle);
-
-    public List<Gonggao> getPage(String ggtitle, Integer index, Integer size);
+    public PageUtil getPage(String ggtitle, Integer index, Integer size);
 
     //添加
     public int add(Gonggao gonggao);

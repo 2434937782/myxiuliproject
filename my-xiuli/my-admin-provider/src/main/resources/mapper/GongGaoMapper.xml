@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.GongGaoMapper">
+    <select id="getPage" resultType="com.kgc.pojo.Gonggao">
+        SELECT * FROM gonggao
+        <where>
+            <if test="ggtitle!=null and ggtitle!=''">and ggtitle like concat('%',#{ggtitle},'%')</if>
+        </where>
+        ORDER by ggid
+        LIMIT #{index},#{size}
+    </select>
+
+    <select id="getConout" resultType="int">
+        SELECT COUNT(*)
+        FROM gonggao
+        <where>
+            <if test="ggtitle!=null and ggtitle!=''">and ggtitle like concat('%',#{ggtitle},'%')</if>
+        </where>
+    </select>
+
+    <insert id="add" parameterType="com.kgc.pojo.Gonggao">
+        insert into gonggao values(null,#{ggtitle},#{ggcontent} ,NOW(),#{glid})
+    </insert>
+
+    <select id="getGonggaoById" resultType="com.kgc.pojo.Gonggao">
+        select * from gonggao
+        where ggid=#{ggid}
+    </select>
+
+    <update id="ggupdate" parameterType="com.kgc.pojo.Gonggao">
+
+        UPDATE gonggao
+        SET ggtitle=#{ggtitle},ggcontent=#{ggcontent},ggdate=NOW(),glid=#{glid}
+        WHERE ggid=#{ggid}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        delete from gonggao
+       where ggid=#{ggid}
+    </delete>
+</mapper>  

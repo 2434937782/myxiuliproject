@@ -1,14 +1,12 @@
-package com.kgc.mapper;
+package com.kgc.service;
 
 import com.kgc.pojo.JingGao;
 import com.kgc.pojo.Users;
 import com.kgc.pojo.XinXi;
-import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
-@Mapper
-public interface GLYongHuMapper {
+public interface GLYongHuService {
     //查看数据库中的违规昵称
     public List<Users> getUserAll();
     //警告表添加  被警告人

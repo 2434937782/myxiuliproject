@@ -1,15 +1,26 @@
 package com.kgc.mapper;
 
+import com.kgc.pojo.Gonggao;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 @Mapper
 public interface GongGaoMapper {
+    //分页
+    public int getConout(@Param("ggtitle") String ggtitle);
+
+    public List<Gonggao> getPage(@Param("ggtitle") String ggtitle, @Param("index") Integer index, @Param("size") Integer size);
+
     //添加
     public int add(Gonggao gonggao);
 
     //删除
-    public int delete(Integer id);
+    public int delete(Integer ggid);
+
     //修改
-    public GongGaoMapper getById(Integer id);
-    public int update(GongGaoMapper gonggao);
+    public Gonggao getGonggaoById(Integer ggid);
+
+    public int ggupdate(Gonggao gonggao);
 }

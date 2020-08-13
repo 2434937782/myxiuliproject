@@ -5,9 +5,9 @@ spring:
     name: my-provider
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/lianxi
+    url: jdbc:mysql://localhost:3306/km_user_db
     username: root
-    password: 123456
+    password: ok
 eureka:
   client:
     service-url:

@@ -1,11 +1,8 @@
-package com.kgc.mapper;
+package com.kgc.service;
 
 import com.kgc.pojo.Users;
-import org.apache.ibatis.annotations.Mapper;
 
-
-@Mapper
-public interface UserMapper {
+public interface UserService {
 
     //添加
     public int add(Users users);
@@ -15,6 +12,4 @@ public interface UserMapper {
 
     //更新
     public int update(Users users);
-
-
 }

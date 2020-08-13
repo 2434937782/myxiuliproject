@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.GoodMapper">
+
+    <select id="getGood" resultType="com.kgc.pojo.Good">
+        select * from good
+        where W_id=#{W_id}
+    </select>
+
+
+    <select id="getGoodpp" resultType="com.kgc.pojo.Good">
+        select * from good_pp
+        where P_id=#{P_id}
+    </select>
+
+    <select id="getGoodxh" resultType="com.kgc.pojo.Good">
+        select * from good_xh
+        where xh_id=#{xd_id}
+    </select>
+
+    <select id="getGoodColor" resultType="com.kgc.pojo.Good">
+        select * from good_colour
+        where y_id=#{y_id}
+    </select>
+
+</mapper>  

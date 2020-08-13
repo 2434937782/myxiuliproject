@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.UserMapper">
+
+    <insert id="add" parameterType="com.kgc.pojo.Users">
+        insert into users_message values(null,#{Name},#{Nicknane} ,#{Password},#{Phone},#{Address},#{Shen},#{Type},#{YhqId})
+    </insert>
+
+
+    <select id="getusersById" resultType="com.kgc.pojo.Users">
+        select * from users_message
+        where id=#{id}
+    </select>
+
+    <update id="update" parameterType="com.kgc.pojo.Users">
+        UPDATE users_message
+        SET Name=#{Name},Nicknane=#{Nicknane},Phone=#{Phone},Address=#{Address},Shen=#{Shen},Type=#{Type},YhqId=#{YhqId}
+        WHERE id=#{id}
+    </update>
+
+</mapper>  

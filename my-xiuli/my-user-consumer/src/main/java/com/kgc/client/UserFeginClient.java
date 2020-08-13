@@ -1,13 +1,9 @@
-package com.kgc.mapper;
+package com.kgc.client;
 
 import com.kgc.pojo.Users;
-import org.apache.ibatis.annotations.Mapper;
 
+public interface UserFeginClient {
 
-@Mapper
-public interface UserMapper {
-
-    //添加
     public int add(Users users);
 
     //根据id查询
@@ -15,6 +11,4 @@ public interface UserMapper {
 
     //更新
     public int update(Users users);
-
-
 }

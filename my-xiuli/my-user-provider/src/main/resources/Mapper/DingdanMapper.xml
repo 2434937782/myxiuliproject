@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.DingdanMapper">
+    <select id="getdingdan" resultType="com.kgc.pojo.Dingdan">
+        select *
+        From dingdan INNER JOIN users_message
+        ON dingdan.userid=users_message.id
+        where userid=#{userid}
+        order by  id
+        LIMIT  ${start},${size}
+    </select>
+
+
+
+    <insert id="add" parameterType="com.kgc.pojo.Dingdan">
+        insert into dingdan values(null,#{tupian},#{ddmz} ,#{ddjg},#{userid},#{goodid})
+    </insert>
+
+</mapper>  

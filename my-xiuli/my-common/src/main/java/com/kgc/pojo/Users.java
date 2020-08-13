@@ -6,14 +6,13 @@ public class Users implements Serializable {
 
     private Integer Id;// INT PRIMARY KEY AUTO_INCREMENT,
     private String Name;// VARCHAR(30),
-    private String Nicknane;// VARCHAR(10),
+    private String Nickname;// VARCHAR(10),
     private String Password;// VARCHAR(15),
     private String Phone;// VARCHAR(10),
     private String Address;//VARCHAR(50),
     private String Shen;// VARCHAR(20),
     private String Type;// VARCHAR(20),
     private String YhqId;// INT(20)
-
 
     public Integer getId() {
         return Id;
@@ -31,12 +30,12 @@ public class Users implements Serializable {
         Name = name;
     }
 
-    public String getNicknane() {
-        return Nicknane;
+    public String getNickname() {
+        return Nickname;
     }
 
-    public void setNicknane(String nicknane) {
-        Nicknane = nicknane;
+    public void setNickname(String nickname) {
+        Nickname = nickname;
     }
 
     public String getPassword() {

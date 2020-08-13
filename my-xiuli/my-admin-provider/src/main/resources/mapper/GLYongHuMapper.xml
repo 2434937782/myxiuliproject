@@ -20,7 +20,7 @@
         where id=#{id}
     </select>
 
-    <update id="update" parameterType="com.kgc.pojo.Users">
+    <update id="updateUser" parameterType="com.kgc.pojo.Users">
 
         UPDATE users_message
         SET Nickname=#{Nickname},TYPE=#{Type}

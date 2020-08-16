@@ -13,7 +13,7 @@ public interface DingdanMapper {
     //查看所有订单
     public List<Dingdan> getdingdan(Map<String, Object> param);
 
-    //订单数量
+    //订单
     public int count(Map<String, Object> param);
 
     //添加订单

@@ -30,8 +30,6 @@ public class RestDingdanService {
         int count = dingdanMapper.count(parma);
         page.setList(list);
         page.setTotalCount(count);
-
-
         return page;
     }
 

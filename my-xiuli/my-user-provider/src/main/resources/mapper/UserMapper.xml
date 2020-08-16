@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.UserMapper">
+
+    <insert id="add" parameterType="com.kgc.pojo.Users">
+        insert into users_message values(null,#{Name},#{Nicknane} ,#{Password},#{Phone},#{Address},#{Shen},#{Type},#{YhqId})
+    </insert>
+
+
+    <select id="getusersById" resultType="com.kgc.pojo.Users">
+        select * from users_message
+        where id=#{id}
+    </select>
+
+    <select id="getName" resultType="com.kgc.pojo.Users">
+        SELECT COUNT(*) FROM users_message WHERE NAME=#{name}
+    </select>
+
+    <select id="findUserLogin" resultType="com.kgc.pojo.Users">
+        SELECT * FROM users_message
+        <where>
+            <if test="name!=null and name!=''">
+                and NAME=#{name}
+            </if>
+            <if test="password!=null and password!=''">
+                and password=#{password}
+            </if>
+        </where>
+    </select>
+
+    <update id="update" parameterType="com.kgc.pojo.Users">
+        UPDATE users_message
+        SET Name=#{Name},Nicknane=#{Nicknane},Phone=#{Phone},Address=#{Address},Shen=#{Shen},Type=#{Type},YhqId=#{YhqId}
+        WHERE id=#{id}
+    </update>
+
+    <select id="getQgUserListByMap" resultType="com.kgc.pojo.Users" parameterType="java.util.Map">
+        select *
+        from users_message
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="Id != null and Id!=''">
+                and Id=#{Id}
+            </if>
+            <if test="Name != null and Name!=''">
+                and Name=#{Name}
+            </if>
+            <if test="Nickname != null and Nickname!=''">
+                and Nickname=#{Nickname}
+            </if>
+            <if test="Password != null and Password!=''">
+                and Password=#{Password}
+            </if>
+            <if test="Phone != null and Phone!=''">
+                and Phone=#{Phone}
+            </if>
+            <if test="Address != null and Address!=''">
+                and Address=#{Address}
+            </if>
+            <if test="Shen != null and Shen!=''">
+                and Shen=#{Shen}
+            </if>
+            <if test="Type != null and Type!=''">
+                and Type=#{Type}
+            </if>
+            <if test="YhqId != null and YhqId!=''">
+                and YhqId=#{YhqId}
+            </if>
+        </trim>
+    </select>
+
+</mapper>  

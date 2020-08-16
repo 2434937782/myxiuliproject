@@ -4,10 +4,12 @@ import com.kgc.pojo.Colour;
 import com.kgc.pojo.Good;
 import com.kgc.pojo.Pinpai;
 import com.kgc.pojo.Xinghao;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
-
+@Component
 public class GoodFeignClientImpl implements  GoodFeignClient{
+
     @Override
     public List<Good> getGood(Integer W_id) {
         return null;

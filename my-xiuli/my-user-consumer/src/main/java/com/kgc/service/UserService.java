@@ -1,5 +1,6 @@
 package com.kgc.service;
 
+import com.kgc.dto.Dto;
 import com.kgc.pojo.Users;
 
 public interface UserService {
@@ -12,4 +13,8 @@ public interface UserService {
 
     //更新
     public int update(Users users);
+
+    public int getName(String name);
+
+    public Dto findUserLogin(String name, String password,String userAgent);
 }

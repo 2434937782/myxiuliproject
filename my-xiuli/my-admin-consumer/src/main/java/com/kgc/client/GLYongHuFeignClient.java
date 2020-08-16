@@ -25,7 +25,7 @@ public interface GLYongHuFeignClient {
 
     //信息表根据被警告人id发送信息
     @RequestMapping("/getJingGaoById/{jgid}")
-    public JingGao getJingGaoById(@PathVariable("jgid") Integer id);
+    public JingGao getJingGaoById(@PathVariable("jgid") Integer jgid);
 
     @RequestMapping("/addXinXi")
     public int addXinXi(@RequestBody XinXi xinxi);

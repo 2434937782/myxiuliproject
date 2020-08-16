@@ -5,9 +5,27 @@
         select *
         From dingdan INNER JOIN users_message
         ON dingdan.userid=users_message.id
-        where userid=#{userid}
+        <where>
+            <if test="userid!=null and userid!=-1">
+                and userid=#{userid}
+            </if>
+        </where>
         order by  id
         LIMIT  ${start},${size}
+    </select>
+
+    <select id="count" resultType="int">
+        select count(*)
+        From dingdan
+        <where>
+            <if test="userid!=null and userid!=-1">
+                and userid=#{userid}
+            </if>
+        </where>
+    </select>
+
+    <select id="getById" resultType="com.kgc.pojo.Dingdan">
+        SELECT * FROM ddxq WHERE ddxqid=#{ddxqid}
     </select>
 
 

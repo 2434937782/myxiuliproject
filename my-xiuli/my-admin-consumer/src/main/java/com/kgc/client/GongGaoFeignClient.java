@@ -5,6 +5,8 @@ import com.kgc.client.Impl.GongGaoFeignClientImpl;
 import com.kgc.pojo.Gonggao;
 import com.kgc.util.PageUtil;
 import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -20,16 +22,16 @@ public interface GongGaoFeignClient {
 
     //添加
     @RequestMapping("/add")
-    public int add(Gonggao gonggao);
+    public int add(@RequestBody Gonggao gonggao);
 
     //删除
     @RequestMapping("/delete/{ggid}")
-    public int delete(Integer ggid);
+    public int delete(@PathVariable("ggid") Integer ggid);
 
     //修改
     @RequestMapping("/getGonggaoById/{ggid}")
-    public Gonggao getGonggaoById(Integer ggid);
+    public Gonggao getGonggaoById(@PathVariable("ggid") Integer ggid);
 
     @RequestMapping("/ggupdate")
-    public int ggupdate(Gonggao gonggao);
+    public int ggupdate(@RequestBody Gonggao gonggao);
 }

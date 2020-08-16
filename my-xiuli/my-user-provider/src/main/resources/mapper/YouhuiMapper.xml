@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.YouhuiMapper">
+    <select id="showyouhui" resultType="com.kgc.pojo.Youhui">
+         SELECT * FROM youhui WHERE yprice=#{yprice}
+    </select>
+
+    <select id="getyouhui" resultType="com.kgc.pojo.Youhui">
+        SELECT * FROM youhui WHERE yhqid=#{yhqid}
+    </select>
+
+    <select id="getCount" resultType="com.kgc.pojo.Youhui">
+        SELECT COUNT(*) FROM youhui WHERE yprice=#{yprice}
+    </select>
+
+    <insert id="add" parameterType="com.kgc.pojo.Youhui">
+        INSERT INTO youhui VALUES(NULL,#{yhqCode},#{ystart},#{yjieshu},{ynum},#{yprice})
+    </insert>
+
+    <update id="update" parameterType="com.kgc.pojo.Youhui">
+        UPDATE youhui SET yhqCode=#{yhqCode},ystart=#{ystart},yjieshu=#{yjieshu},ynum=#{ynum},yprice=#{yprice} where yhqid=#{yhqid}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM youhui WHERE yhqid=#{yhqid}
+    </delete>
+
+    <delete id="deleteall" parameterType="com.kgc.pojo.Youhui">
+        DELETE FROM youhui WHERE yprice=#{yprice}
+    </delete>
+</mapper>  

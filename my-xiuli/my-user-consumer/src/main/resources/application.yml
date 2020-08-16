@@ -1,8 +1,12 @@
 server:
-  port: 9004
+  port: 9002
 spring:
   application:
-    name: my-consumer
+    name: my-user-consumer
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
 eureka:
   client:
     service-url:

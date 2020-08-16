@@ -5,9 +5,10 @@ import com.kgc.pojo.Gonggao;
 import com.kgc.service.GongGaoService;
 import com.kgc.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class GongGaoServiceImpl implements GongGaoService {
     @Autowired
     private GongGaoFeignClient gongGaoFeignClient;

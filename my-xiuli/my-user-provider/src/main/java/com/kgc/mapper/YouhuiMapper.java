@@ -9,11 +9,11 @@ import java.util.List;
 @Mapper
 public interface YouhuiMapper {
 
-    public List<Youhui> getyouhui(Double yprice);
+    public List<Youhui> showyouhui(String yprice);
 
     public Youhui getyouhui(Integer yhqid);
 
-    public int getCount(Double yprice);
+    public int getCount(String yprice);
 
     public int add(Youhui youhui);
 
@@ -21,5 +21,5 @@ public interface YouhuiMapper {
 
     public int delete(Integer yhqid);
 
-    public int deleteall(Double yprice);
+    public int deleteall(String yprice);
 }

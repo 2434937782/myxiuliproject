@@ -5,11 +5,11 @@ import com.kgc.pojo.Youhui;
 import java.util.List;
 
 public interface YouhuiService {
-    public List<Youhui> getyouhui(Double yprice);
+    public List<Youhui> showyouhui(String yprice);
 
     public Youhui getyouhui(Integer yhqid);
 
-    public int getCount(Double yprice);
+    public int getCount(String yprice);
 
     public int add(Youhui youhui);
 
@@ -17,5 +17,5 @@ public interface YouhuiService {
 
     public int delete(Integer yhqid);
 
-    public int deleteall(Double yprice);
+    public int deleteall(String yprice);
 }

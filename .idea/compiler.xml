@@ -16,5 +16,8 @@
         <module name="my-user-provider" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="my-eureka" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

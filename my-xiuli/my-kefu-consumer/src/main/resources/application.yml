@@ -1,8 +1,8 @@
 server:
-  port: 9005
+  port: 9004
 spring:
   application:
-    name: my-consumer
+    name: my-kefu-consumer
 eureka:
   client:
     service-url:

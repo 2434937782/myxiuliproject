@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class GoodServiceimpl implements GoodService {
+public class GoodServiceImpl implements GoodService {
 
     @Autowired
     private GoodFeignClient goodFeignClient;

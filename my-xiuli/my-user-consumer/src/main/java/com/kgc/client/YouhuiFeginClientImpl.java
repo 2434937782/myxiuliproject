@@ -1,12 +1,14 @@
 package com.kgc.client;
 
 import com.kgc.pojo.Youhui;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
-
+@Component
 public class YouhuiFeginClientImpl implements  YouhuiFeginClient{
+
     @Override
-    public List<Youhui> getyouhui(Double yprice) {
+    public List<Youhui> showyouhui(String yprice) {
         return null;
     }
 
@@ -16,7 +18,7 @@ public class YouhuiFeginClientImpl implements  YouhuiFeginClient{
     }
 
     @Override
-    public int getCount(Double yprice) {
+    public int getCount(String yprice) {
         return 0;
     }
 
@@ -36,7 +38,7 @@ public class YouhuiFeginClientImpl implements  YouhuiFeginClient{
     }
 
     @Override
-    public int deleteall(Double yprice) {
+    public int deleteall(String yprice) {
         return 0;
     }
 }
